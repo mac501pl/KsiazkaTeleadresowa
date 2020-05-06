@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <script
+            src="https://code.jquery.com/jquery-3.5.0.min.js"
+            integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://friconix.com/cdn/friconix.js"></script>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./script.js" defer></script>
+    <title>Książka teleadresowa</title>
+</head>
+<body>
+<input class="w3-input" oninput="w3.filterHTML('.contacts', '.item', this.value)" placeholder="Filtruj">
+<table class="contacts w3-table-all">
+    <tr>
+        <th onclick="w3.sortHTML('.contacts','.item', 'td:nth-child(1)')">Imię&nbsp<i
+                class="fi-xwsuxl-sort-solid"></i></th>
+        <th onclick="w3.sortHTML('.contacts','.item', 'td:nth-child(2)')">Nazwisko&nbsp<i
+                class="fi-xwsuxl-sort-solid"></i></th>
+        <th onclick="w3.sortHTML('.contacts','.item', 'td:nth-child(3)')">Numer telefonu&nbsp<i
+                class="fi-xwsuxl-sort-solid"></i></th>
+        <th></th>
+    </tr>
+</table>
+<div class="more-info">
+    <h3>Dodatkowe informacje:</h3>
+    <ul>
+        <li>Imię:&nbsp<span class="firstName"></span></li>
+        <li>Nazwisko:&nbsp<span class="lastName"></span></li>
+        <li>Numer telefonu:&nbsp<span class="phoneNumber"></span></li>
+        <li>E-mail:&nbsp<span class="email"></span></li>
+        <li>Firma:&nbsp<span class="company"></span></li>
+        <li>Tytuł:&nbsp<span class="title"></span></li>
+        <li>Notatki:&nbsp<span class="notes"></span></li>
+    </ul>
+</div>
+</body>
+</html>
